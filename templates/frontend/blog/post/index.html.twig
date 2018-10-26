@@ -1,0 +1,49 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+<div class="uk-section uk-section-small">
+
+  <div class="uk-container tm-container-medium">
+    <div class="uk-text-left@m uk-text-center">
+      <div class="">
+        <h3 class="responsive-title animated-title"><span>Nueva Alianza Estratégica</span> </h3>
+        <h3 class="responsive-title gray-accent animated-title"><span>Noticias</span></h3>
+         <div class="uk-width-large@m uk-width-1-1">
+           <p class="uk-margin">Somos Asesorías CGV, un estudio que te guiará en el camino de emprender y mantener tu negocio hasta llegar a cumplir tus metas.</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-position-relative">
+  <div class="uk-background-cover uk-height-large" uk-img data-src="{{ asset('https://images.unsplash.com/photo-1486987405332-2ed2439397c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2e64d1a2156241086c57ebadd54f9741&auto=format&fit=crop&w=1885&q=80') }}"></div>
+  <div class="img-overlay"></div>
+</div>
+
+<div class="uk-section uk-section-large">
+  <div class="uk-container">
+
+     <div class="blog-content uk-width-3-5@m uk-width-4-5@s uk-width-1-1 uk-margin-auto">
+       <p class="uk-article-meta">Escrito por <a href="#">Claudia Gómez</a> el 12 Abril 2019. Publicado en <a href="#">Noticias</a></p>
+       <h2>Encabezado Importante</h2>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+ <img class="uk-width-1-1" src="https://images.unsplash.com/photo-1506438352327-36e0db62bf21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=56f20b71b13fd8a32304737e0011292f&auto=format&fit=crop&w=1350&q=80" alt="">
+
+     </div>
+
+  </div>
+</div>
+
+{% include 'frontend/components/footer.html.twig' %}
+
+{% endblock %}

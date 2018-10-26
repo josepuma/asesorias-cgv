@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} | Asesorías CGV</title>
+        {% block stylesheets %}
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/css/uikit.min.css"/>
+          <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700|Prata" rel="stylesheet">
+          <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+          <link rel="shortcut icon" type="image/png" href="{{ asset('assets/favicon.png') }}"/>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit.min.js"></script>
+                  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      {% endblock %}
+    </head>
+    <body>
+        <div id="main-container">
+          {% block body %}{% endblock %}
+        </div>
+
+        <div class="loader"></div>
+
+
+        {% block javascripts %}
+        <script scr="{{ asset('assets/scrollspy.js') }}"></script>
+<script type="text/javascript" src="{{ asset('build/app.js') }}"></script>
+<script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
+{widgetcode:"d606e1a7d8a2020dda3d8b5c21af1169e96f326c7a9d123888ace36818a6cbeea2d338055bcd93bfb65b6b4e7bb96cc7", values:{},ready:function(){}};
+var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
+s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/js/uikit-icons.min.js"></script>
+      {% endblock %}
+    </body>
+</html>

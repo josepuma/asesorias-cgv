@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1616">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-legal-bg);
+      }
+
+      .cls-2, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #dfdfdf;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #497bef;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_45);
+      }
+    </style>
+    <filter id="Ellipse_45" x="142.893" y="243.949" width="330.312" height="330.312" filterUnits="userSpaceOnUse">
+      <feOffset dy="46" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="41.5" result="blur"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-legal-bg">
+      <rect width="1920" height="1616"/>
+    </clipPath>
+  </defs>
+  <g id="legal-bg" class="cls-1">
+    <rect class="cls-3" width="1920" height="1616"/>
+    <g id="Group_7" data-name="Group 7" transform="translate(-356.432 -5168.432)">
+      <g id="Ellipse_42" data-name="Ellipse 42" class="cls-2" transform="translate(800.521 5592.521)">
+        <circle class="cls-5" cx="46.911" cy="46.911" r="46.911"/>
+        <circle class="cls-6" cx="46.911" cy="46.911" r="46.411"/>
+      </g>
+      <g id="Ellipse_43" data-name="Ellipse 43" class="cls-2" transform="translate(633.206 5425.207)">
+        <circle class="cls-5" cx="214.225" cy="214.225" r="214.225"/>
+        <circle class="cls-6" cx="214.225" cy="214.225" r="213.725"/>
+      </g>
+      <g id="Ellipse_44" data-name="Ellipse 44" class="cls-2" transform="translate(444 5236)">
+        <circle class="cls-5" cx="403.432" cy="403.432" r="403.432"/>
+        <circle class="cls-6" cx="403.432" cy="403.432" r="402.932"/>
+      </g>
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 356.43, 5168.43)">
+        <circle id="Ellipse_45-2" data-name="Ellipse 45" class="cls-3" cx="40.656" cy="40.656" r="40.656" transform="translate(267.39 322.45)"/>
+      </g>
+      <path id="ic_gavel_24px" class="cls-4" d="M1,16.637h9.382V18.2H1ZM4.318,6.528l2.213-2.21L17.586,15.374l-2.211,2.211ZM9.847,1,14.27,5.422,12.058,7.635,7.637,3.209ZM3.208,7.634l4.423,4.423L5.42,14.268,1,9.845Z" transform="translate(654.883 5521.937)"/>
+    </g>
+  </g>
+</svg>

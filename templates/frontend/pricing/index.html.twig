@@ -1,0 +1,207 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+<div class="uk-section uk-text-center">
+
+<div class="uk-container tm-container-medium">
+
+   <p class="tag-section uk-margin-remove">Planes</p>
+   <h2 class="uk-margin-small">Elige el plan que necesites</h2>
+   <p class="uk-margin-remove uk-width-large@s uk-width-1-1 uk-margin-auto" >Te ofrecemos planes pre-armados para cumplir con tus principales necesidades dentro de tu negocio.</p>
+
+</div>
+
+</div>
+
+<div class="uk-section uk-background-cover" uk-img data-src="{{ asset('assets/components/pricing/pricing-bg.svg') }}">
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-width-3-5@m uk-width-3-5@s uk-width-1-1 uk-margin-auto">
+      <ul class="uk-flex-center" uk-tab="animation: uk-animation-slide-bottom-medium">
+      <li><a href="#">Básico</a></li>
+      <li><a href="#">Intermedio</a></li>
+      <li><a href="#">Avanzado</a></li>
+      <li><a href="#">Empresa</a></li>
+      <li><a href="#">Servicios Adicionales</a></li>
+  </ul>
+
+  <ul class="uk-switcher uk-margin">
+
+{# Pricing #}
+
+      <li>
+             <img class="uk-margin" src="{{ asset('assets/components/pricing/pricing-a.svg') }}" uk-img alt="">
+          <div>
+            <p class="tag-section uk-margin-remove">Plan Básico</p>
+            <h3 class="uk-margin-bottom">Servicios Incluidos</h3>
+            <ul class="uk-list uk-list-large uk-list-divider">
+   <li><p>Redacción de Escrituras.</p></li>
+   <li><p>Compra del Certificado Digital por 1 año.</p></li>
+   <li><p>Obtención del RUT.</p></li>
+</ul>
+
+<div class="uk-section">
+  <div class="uk-text-center">
+    <p class="price">$ 80.000 CLP</p>
+  </div>
+</div>
+
+<div class="uk-text-center">
+  <a href="" class="uk-button link-style-a">Contratar</a>
+</div>
+
+          </div>
+      </li>
+
+      {# Pricing #}
+
+      <li>
+             <img class="uk-margin" src="{{ asset('assets/components/pricing/pricing-b.svg') }}" uk-img alt="">
+          <div>
+            <p class="tag-section uk-margin-remove">Plan Intermedio</p>
+            <h3 class="uk-margin-bottom">Servicios Incluidos</h3>
+            <ul class="uk-list uk-list-large uk-list-divider">
+              <li><p>Redacción de Escrituras.</p></li>
+              <li><p>Compra del Certificado Digital por 1 año.</p></li>
+              <li><p>Obtención del RUT.</p></li>
+   <li><p>Obtención Clave SII.</p></li>
+   <li><p>Inicio de Actividades.</p></li>
+   <li><p>Incorporación al Régimen Tributario de acuerdo al Giro y Tipo Societario.</p></li>
+   <li><p>Incorporación al Sistema de Contabilidad Computacional.</p></li>
+   <li><p>Incripción al Sistema de Facturación del SII.</p></li>
+
+</ul>
+
+<div class="uk-section">
+  <div class="uk-text-center">
+    <p class="price">$ 140.000 CLP</p>
+  </div>
+</div>
+
+<div class="uk-text-center">
+  <a href="" class="uk-button link-style-a">Contratar</a>
+</div>
+
+          </div>
+      </li>
+
+      {# Pricing #}
+
+      <li>
+             <img class="uk-margin" src="{{ asset('assets/components/pricing/pricing-c.svg') }}" uk-img alt="">
+          <div>
+            <p class="tag-section uk-margin-remove">Plan Avanzado</p>
+            <h3 class="uk-margin-bottom">Servicios Incluidos</h3>
+            <ul class="uk-list uk-list-large uk-list-divider">
+              <li><p>Redacción de Escrituras.</p></li>
+              <li><p>Compra del Certificado Digital por 1 año.</p></li>
+              <li><p>Obtención del RUT.</p></li>
+   <li><p>Obtención Clave SII.</p></li>
+   <li><p>Inicio de Actividades.</p></li>
+   <li><p>Incorporación al Régimen Tributario de acuerdo al Giro y Tipo Societario.</p></li>
+   <li><p>Incorporación al Sistema de Contabilidad Computacional.</p></li>
+   <li><p>Incripción al Sistema de Facturación del SII.</p></li>
+   <li><p>Sitio Web Corporativo.</p></li>
+   <li><p>Desde 5 correos corporativos. - $ 5.000 CLP mensual</p></li>
+   <li><p>Dominio x 1 año</p></li>
+</ul>
+
+<div class="uk-section">
+  <div class="uk-text-center">
+    <p class="price">$ 260.000 CLP</p>
+  </div>
+</div>
+
+<div class="uk-text-center">
+  <a href="" class="uk-button link-style-a">Contratar</a>
+</div>
+
+          </div>
+      </li>
+
+      {# Pricing #}
+
+      <li>
+             <img class="uk-margin" src="{{ asset('assets/components/pricing/pricing-d.svg') }}" uk-img alt="">
+          <div>
+            <p class="tag-section uk-margin-remove">Plan Empresa</p>
+            <h3 class="uk-margin-bottom">Servicios Incluidos</h3>
+            <ul class="uk-list uk-list-large uk-list-divider">
+   <li>
+     <h4>Asesoría Contable - Tributaria - RR HH - Jurídica</h4>
+     <ul class="uk-list uk-list-bullet">
+<li><h4>Remuneraciones (RR HH - Jurídica)</h4></li>
+<li><p>Confección de contratos de trabajos de 1 a 10 trabajadores.</p></li>
+<li><p>Liquidaciones de sueldos mensuales.</p></li>
+<li><p>Finiquitos, en caso de término de relación laboral.</p></li>
+<li><p>Libro de remuneraciones mensuales.</p></li>
+<li><p>Asesoría y acompañamiento ante la Inspección del Trabajo.</p></li>
+<li><p>Declaración de Previred online.</p></li>
+<li><p> Tramitación online en la Dirección del Trabajo (bajas de trabajadores finiquitados, renuncias voluntarias).</p></li>
+<li><p>Externalización de contratación de Trabajadores.</p></li>
+<li><p>Asesoría Ley de Migración.</p></li>
+</ul>
+   </li>
+
+   <li>
+     <ul class="uk-list uk-list-bullet">
+<li><h4>Contabilidad</h4></li>
+<li><p>Emisión y envío al SII de libros de compra.</p></li>
+<li><p>Emisión y envío al SII de libros de venta.</p></li>
+<li><p>Emisión libro de Honorarios.</p></li>
+<li><p>Centralización de Remuneraciones.</p></li>
+<li><p>Emisión y presentación Formulario 29 mensualmente.</p></li>
+<li><p>Balance General Anual.</p></li>
+<li><p>Rendiciones de caja chica anual.</p></li>
+<li><p>Asistencia al SII correspondiente en caso de ser requerido.</p></li>
+</ul>
+   </li>
+
+</ul>
+
+{#<div class="uk-section">
+  <div class="uk-text-center">
+    <p class="price">$ 260.000 CLP</p>
+  </div>
+</div>#}
+
+<div class="uk-text-center">
+  <a href="" class="uk-button link-style-a">Contratar</a>
+</div>
+
+          </div>
+      </li>
+
+      {# Pricing #}
+
+            <li>
+                   <img class="uk-margin" src="{{ asset('assets/components/pricing/pricing-a.svg') }}" uk-img alt="">
+                <div>
+                  <p class="tag-section uk-margin-remove">Servicios Adicionales</p>
+                  <h3 class="uk-margin-bottom">Servicios Incluidos</h3>
+                  <ul class="uk-list uk-list-large uk-list-divider">
+         <li><p>Tramitación de Patente Comercial. - $ CLP</p></li>
+         <li><p>Tramitacion de Transbank. - $ CLP</p></li>
+         <li><p>Tramitación de Cuenta Corriente. - $ CLP</p></li>
+      </ul>
+
+      <div class="uk-text-center">
+        <a href="" class="uk-button link-style-a">Contratar</a>
+      </div>
+
+                </div>
+            </li>
+
+  </ul>
+    </div>
+  </div>
+</div>
+
+{% include 'frontend/components/footer.html.twig' %}
+
+{% endblock %}

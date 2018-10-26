@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1087">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-pricing-bg);
+      }
+
+      .cls-2 {
+        fill: #497bef;
+      }
+    </style>
+    <clipPath id="clip-pricing-bg">
+      <rect width="1920" height="1087"/>
+    </clipPath>
+  </defs>
+  <g id="pricing-bg" class="cls-1">
+    <g id="Group_22" data-name="Group 22" transform="translate(-233 -143)">
+      <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-2" width="142" height="124" transform="translate(1598.701 949.276) rotate(180)"/>
+      <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-2" width="104" height="92" transform="translate(1728.351 787.862) rotate(-129)"/>
+      <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-2" width="130" height="116" transform="translate(2019.377 747.903) rotate(-167)"/>
+      <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-2" width="142" height="124" transform="translate(776.286 777.061) rotate(81)"/>
+      <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-2" width="104" height="92" transform="translate(596.577 674.258) rotate(132)"/>
+      <rect id="Rectangle_36" data-name="Rectangle 36" class="cls-2" width="130" height="116" transform="matrix(-0.07, 0.998, -0.998, -0.07, 511.584, 393.066)"/>
+    </g>
+  </g>
+</svg>

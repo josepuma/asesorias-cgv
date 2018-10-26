@@ -1,0 +1,131 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+<div class="uk-section uk-section-large uk-position-relative background-primary-1-2">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('https://images.unsplash.com/photo-1523430237819-5fdfeb4f5604?ixlib=rb-0.3.5&s=b6b2a400d5fd2fff5634f3d8d8c7f6b8&auto=format&fit=crop&w=1537&q=80') }}" alt="">
+                  <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Administración</p>
+                    <h1 class="title uk-margin-small">Contabilidad</h1>
+                    <div>
+                      <ul class="uk-list uk-list-divider">
+                          <li><p>Registro de Compras, Ventas, Sueldos y Honorarios</p></li>
+                          <li><p>Confección de Impuestos</p></li>
+                          <li><p>Confección de Libro de Remuneraciones y Pago de Leyes Sociales</p></li>
+
+                      </ul>
+                    </div>
+
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('https://images.unsplash.com/photo-1521540216272-a50305cd4421?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5433224431f2cb232741669ea1a89dca&auto=format&fit=crop&w=1227&q=80') }}" alt="">
+                    <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div class="uk-flex-first@m">
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Administración</p>
+                    <h1 class="title uk-margin-small">Finanzas</h1>
+                    <ul class="uk-list uk-list-divider">
+                        <li><p>Planificación Financiera</p></li>
+                        <li><p>Presupuestos</p></li>
+                        <li><p>Flujos de Caja</p></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-position-relative background-primary-1-2">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('https://images.unsplash.com/photo-1520492943297-59dc5f2d0fe6?ixlib=rb-0.3.5&s=e9c5a5ae6a0108f712ae4ec22a7bbb0b&auto=format&fit=crop&w=1357&q=80') }}" alt="">
+                  <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Administración</p>
+                    <h1 class="title uk-margin-small">Recursos Humanos</h1>
+                    <ul class="uk-list uk-list-divider">
+                        <li><p>Emisión de Contratos</p></li>
+                        <li><p>Finiquitos</p></li>
+                        <li><p>Constancias en La Dirección del Trabajo</p></li>
+                        <li><p>Tramitación de Licencias Médicas</p></li>
+                    </ul>
+
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+{% include 'frontend/components/footer.html.twig' %}
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+<div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" uk-img data-src="{{ asset('https://images.unsplash.com/photo-1506185470477-d47644453859?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b889ef3a11f67088813632e5b907d27&auto=format&fit=crop&w=1525&q=80') }}" uk-height-viewport></div>
+            <div class="uk-padding-large">
+
+
+<div class="uk-width-large uk-margin-auto">
+
+  <h1 class="uk-text-center">Bienvenido</h1>
+  <div class="uk-width-medium uk-margin">
+    <p>Bienvenido a tu portal. Inicia sesión con tus credenciales.</p>
+  </div>
+
+  <form class="uk-form-stacked">
+
+<div class="uk-margin">
+<label class="uk-form-label" for="form-stacked-text">Email</label>
+<div class="uk-form-controls">
+<input class="uk-input uk-form-large" type="email" type="text" placeholder="ejemplo@asesoriascgv.cl">
+</div>
+</div>
+
+<div class="uk-margin">
+<label class="uk-form-label" for="form-stacked-text">Contraseña</label>
+<div class="uk-form-controls">
+<input class="uk-input uk-form-large" type="password" type="text" placeholder="">
+</div>
+</div>
+
+
+</form>
+
+</div>
+
+                <div class="uk-margin uk-text-center">
+                  <a href="{{ path('home') }}" class="uk-button link-style-a"> <span class="uk-icon uk-margin-small-right" uk-icon="icon: arrow-left;"></span> Volver a CGV</a>
+                  <a href="{{ path('home') }}" class="uk-button link-style-a"> Iniciar Sesión <span class="uk-icon uk-margin-small-left" uk-icon="icon: arrow-right;"></span></a>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

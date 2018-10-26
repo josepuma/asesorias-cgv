@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1616">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-admin-bg);
+      }
+
+      .cls-2, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #dfdfdf;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #497bef;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_47);
+      }
+
+      .cls-8 {
+        filter: url(#Ellipse_40);
+      }
+    </style>
+    <filter id="Ellipse_40" x="1269.542" y="246.923" width="329.779" height="329.779" filterUnits="userSpaceOnUse">
+      <feOffset dy="46" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="41.5" result="blur"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_47" x="924.68" y="471.395" width="329.779" height="329.779" filterUnits="userSpaceOnUse">
+      <feOffset dy="46" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="41.5" result="blur-2"/>
+      <feFlood flood-opacity="0.141"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-admin-bg">
+      <rect width="1920" height="1616"/>
+    </clipPath>
+  </defs>
+  <g id="admin-bg" class="cls-1">
+    <rect class="cls-3" width="1920" height="1616"/>
+    <g id="amin-bg" transform="translate(165.214 -2485.786)">
+      <g id="Ellipse_37" data-name="Ellipse 37" class="cls-2" transform="translate(1050.183 2912.183)">
+        <circle class="cls-5" cx="46.603" cy="46.603" r="46.603"/>
+        <circle class="cls-6" cx="46.603" cy="46.603" r="46.103"/>
+      </g>
+      <g id="Ellipse_38" data-name="Ellipse 38" class="cls-2" transform="translate(883.966 2745.966)">
+        <circle class="cls-5" cx="212.821" cy="212.821" r="212.821"/>
+        <circle class="cls-6" cx="212.821" cy="212.821" r="212.321"/>
+      </g>
+      <g id="Ellipse_39" data-name="Ellipse 39" class="cls-2" transform="translate(696 2558)">
+        <circle class="cls-5" cx="400.786" cy="400.786" r="400.786"/>
+        <circle class="cls-6" cx="400.786" cy="400.786" r="400.286"/>
+      </g>
+      <g id="Group_21" data-name="Group 21" transform="translate(1228.828 2811.21)">
+        <g class="cls-8" transform="matrix(1, 0, 0, 1, -1394.04, -325.42)">
+          <circle id="Ellipse_40-2" data-name="Ellipse 40" class="cls-3" cx="40.389" cy="40.389" r="40.389" transform="translate(1394.04 325.42)"/>
+        </g>
+        <path id="ic_layers_24px" class="cls-4" d="M9.983,14.847,4.258,10.4,3,11.375l6.99,5.437,6.99-5.437-1.266-.986L9.983,14.847Zm.008-1.973,5.717-4.451,1.274-.986L9.99,2,3,7.437l1.266.986Z" transform="translate(30.399 30.622)"/>
+      </g>
+      <g id="Group_20" data-name="Group 20" transform="translate(883.966 3035.681)">
+        <g class="cls-7" transform="matrix(1, 0, 0, 1, -1049.18, -549.89)">
+          <circle id="Ellipse_47-2" data-name="Ellipse 47" class="cls-3" cx="40.389" cy="40.389" r="40.389" transform="translate(1049.18 549.89)"/>
+        </g>
+        <path id="ic_timeline_24px" class="cls-4" d="M18.088,7.553a1.558,1.558,0,0,1-1.553,1.553,1.32,1.32,0,0,1-.4-.054L13.373,11.81a1.372,1.372,0,0,1,.054.4,1.553,1.553,0,1,1-3.107,0,1.372,1.372,0,0,1,.054-.4L8.394,9.829a1.527,1.527,0,0,1-.808,0L4.052,13.371a1.32,1.32,0,0,1,.054.4,1.553,1.553,0,1,1-1.553-1.553,1.32,1.32,0,0,1,.4.054L6.491,8.734a1.372,1.372,0,0,1-.054-.4,1.553,1.553,0,1,1,3.107,0,1.372,1.372,0,0,1-.054.4l1.981,1.981a1.527,1.527,0,0,1,.808,0L15.035,7.95a1.32,1.32,0,0,1-.054-.4,1.553,1.553,0,1,1,3.107,0Z" transform="translate(30.845 29.729)"/>
+      </g>
+    </g>
+  </g>
+</svg>

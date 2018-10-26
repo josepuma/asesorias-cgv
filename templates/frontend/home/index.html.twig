@@ -1,0 +1,319 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+
+<div>
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+<div class="uk-section uk-section-small">
+
+  <div class="uk-container tm-container-medium">
+    <div class="uk-card-body uk-text-left@m uk-text-center">
+      <div class="">
+        <h3 class="responsive-title animated-title"><span>Te ayudamos en</span> </h3>
+        <h3 class="responsive-title gray-accent animated-title"><span style="animation-delay: 1s;">tu camino al éxito</span></h3>
+         <div class="uk-width-large@m uk-width-1-1">
+           <p class="uk-margin">Somos Asesorías CGV, un estudio que te guiará en el camino de emprender y mantener tu negocio hasta llegar a cumplir tus metas.</p>
+         </div>
+       <div>
+        <a href="{{ path('contact') }}" class="uk-button link-style-a">Conversemos</a>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="uk-overflow-hidden uk-position-relative">
+  <img class="uk-width-1-1" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="{{ asset('assets/components/background.jpg') }}" uk-img alt="">
+  <div class="img-overlay"></div>
+</div>
+
+<div class="uk-section uk-section-large uk-text-center">
+
+<div class="uk-container tm-container-large">
+
+   <p class="tag-section uk-margin-remove">NOSOTROS</p>
+   <h2 class="uk-margin-small">Somos un equipo joven de profesionales</h2>
+   <p class="uk-margin-remove uk-width-large@s uk-width-1-1 uk-margin-auto" >Te guiaremos en todos los pasos que tomes con tu emprendimiento.</p>
+
+</div>
+
+</div>
+
+
+<div class="uk-section uk-section-large uk-position-relative background-primary-1-2">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img id="service-item-a" uk-img src="{{ asset('assets/components/us.png') }}" alt="">
+                  <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <h1 class="title uk-margin-remove">Acerca de Nosotros</h1>
+                    <p class="content-description uk-margin">
+                      Somos un equipo de trabajo joven enfocados en brindar servicios acorde a las necesidades de cada cliente. Nuestro objetivo es guiar y ayudarte en tu emprendimiento y así cumplas tus metas.
+                    </p>
+
+                      <a class="uk-button link-style-a transition-website" href="{{ path('team') }}">Conozca Nuestro Equipo</a>
+
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover uk-background-top-right" data-src="{{ asset('assets/components/admin-bg.svg') }}" uk-img>
+
+  <div class="uk-container tm-container-medium">
+
+      <div class="uk-width-large uk-text-left@s uk-text-center">
+        <p class="tag-section uk-margin-remove">SERVICIOS</p>
+        <h1>Administración</h1>
+        <p class="uk-margin">Entregamos servicios relacionados al área de administración donde nos enfocamos en procesar la información financiera contable y tributaria para cumplir con las obligaciones inherentes a la empresa facilitando la toma de decisiones.</p>
+        <a href="{{ path('services-admin') }}" class="uk-button link-style-a transition-website">Ver Más Información</a>
+      </div>
+
+      <div class="uk-section uk-section-large">
+
+         <div class="uk-child-width-1-1 uk-text-center uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-match" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > div > div; delay: 500; repeat: true" uk-grid>
+           <div>
+             <div class="card-service-container uk-card-body">
+               <h3>Contabilidad</h3>
+               <p class="uk-margin-small">Te ayudamos en Registro de Compras, Ventas, Sueldos y Honorarioos, Confección de Impuestos, Confección de Libro de Remuneraciones y Pago de Leyes Sociales.</p>
+               <a href="{{ path('services-admin') }}" class="uk-button link-style-a transition-website">Ver Más Información</a>
+             </div>
+           </div>
+
+           <div>
+             <div class="card-service-container uk-card-body">
+               <h3>Finanzas</h3>
+               <p class="uk-margin-small">Te ayudamos en Planificación Financiera, Presupuestos y Flujos de Caja.</p>
+               <a href="{{ path('services-admin') }}" class="uk-button link-style-a transition-website">Ver Más Información</a>
+             </div>
+           </div>
+
+           <div>
+             <div class="card-service-container uk-box-shadow-medium uk-background-default uk-card-body">
+               <h3>Recursos Humanos</h3>
+               <p class="uk-margin-small">Te ayudamos en Recursos Humanos, Emisión de Contratos, Finiquitos, Constancias en la Dirección De Trabajo, Tramitación de Licencias Médicas.</p>
+               <a href="{{ path('services-admin') }}" class="uk-button link-style-a transition-website">Ver Más Información</a>
+             </div>
+           </div>
+
+         </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover" uk-img data-src="{{ asset('assets/components/bg-b.png') }}">
+
+<div class="uk-container tm-container-medium">
+
+   <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true" class="uk-card-body uk-background-default uk-width-3-5@m uk-width-1-1 uk-text-left@m uk-text-center uk-box-shadow-medium card-service-container">
+     <div class="">
+       <h3>Trabajamos de la mano con nuestros clientes para obtener
+los mejores resultados y asegurar el éxito. </h3>
+       <p class="uk-margin">
+          Nuestra misión es entregar a nuestros clientes una asesoría integral, en todas las etapas de su emprendimiento. Nos preocupamos de brindar un servicio completo, a través de una atención personalizada enfocada a resolver todas las dudas e inquietudes que surjan en el desarrollo de sus negocios.
+       </p>
+      <div class="uk-text-right">
+        <a href="{{ path('contact') }}" class="transition-website"><span class="uk-icon" uk-icon="icon: arrow-right"></span></a>
+      </div>
+     </div>
+   </div>
+
+</div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover  uk-background-top-right" uk-img data-src="{{ asset('assets/components/legal-bg.svg') }}">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Servicios</p>
+                    <h1 class="title uk-margin-remove">Jurídico</h1>
+                    <p class="content-description uk-margin-remove">
+                      Trabajamos para llegar a la mejor y más eficaz de las soluciones posibles, proporcionando un servicio jurídico altamente cualificado y de gran calidad.
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+       <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+             <div>
+
+               <div class="uk-child-width-1-2@s uk-grid-match" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > div > div; delay: 500; repeat: true" uk-grid>
+                 <div>
+                   <div class="card-blue-container uk-padding selected">
+                     <h3>Derecho Civil</h3>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="card-blue-container uk-padding ">
+                     <h3>Derecho de Familia</h3>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="card-blue-container uk-padding ">
+                     <h3>Modificación de Sociedades</h3>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="card-blue-container uk-padding ">
+                     <h3>Juicios Ejecutivos</h3>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="card-blue-container uk-padding ">
+                     <h3>Juicios Sumarios</h3>
+                   </div>
+                 </div>
+                 <div>
+                   <div class="card-blue-container uk-padding ">
+                     <h3>Juicios Ordinarios</h3>
+                   </div>
+                 </div>
+               </div>
+
+             </div>
+             <div>
+               <div class="uk-text-center uk-text-right@m">
+                   <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                     <div class="service-container">
+                       <h1 class="title uk-margin-remove">Te ayudamos en todas las áreas legales</h1>
+                       <p class="content-description uk-margin">
+                         Somos su más solvente proveedor de servicios jurídicos, ofreciendo seguridad y cercanía.
+                       </p>
+                                           <a href="{{ path('services-juridico') }}" class="transition-website uk-button link-style-a">Ver Más Información</a>
+                                      </div>
+                   </div>
+               </div>
+             </div>
+
+          </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover" uk-img data-src="{{ asset('assets/components/client-bg.svg') }}">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">>
+                  <img id="service-item-a" uk-img src="{{ asset('assets/components/client.png') }}" alt="">
+                  <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div class="uk-flex-first@m">
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <h1 class="title uk-margin-remove">¿Qué deberías esperar
+como cliente?</h1>
+                    <p class="content-description uk-margin">
+                      Responsabilidad y Credibilidad con todos los pasos que vayas a realizar en este camino hacia el emprendimiento.
+                    </p>
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <div>
+      <div class="uk-card uk-card-default">
+        <div class="uk-card-media-top">
+            <img src="{{ asset('assets/components/blog.png') }}" alt="">
+        </div>
+          <div class="uk-card-body">
+              <h3 class="uk-card-title">¿Cómo realizar los trámites
+correspondientes al sistema actual?</h3>
+              <p class="uk-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="{{ path('blog') }}" class="uk-button link-style-a transition-website">Leer artículo</a>
+          </div>
+      </div>
+  </div>
+            </div>
+          </div>
+          <div >
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <h1 class="title uk-margin-remove">Nuestro Blog</h1>
+                    <p class="content-description uk-margin">
+                      Publicamos información y noticias que podrían ser de tu interés común. Así también artículos con información valiosa.
+                    </p>
+                    <a href="{{ path('blog') }}" class="transition-website uk-button link-style-a">Visitar Nuestro Blog</a>
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+{% include 'frontend/components/footer.html.twig' %}
+
+</div>
+
+{% endblock %}

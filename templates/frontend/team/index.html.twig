@@ -1,0 +1,162 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+
+<div class="uk-text-center">
+        <div class="uk-inline-clip uk-transition-toggle uk-light uk-width-1-1" tabindex="0">
+            <img class="uk-width-1-1" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="{{ asset('assets/components/background-team.jpg') }}" uk-img alt="">
+            <div class="uk-position-center">
+                <div class="uk-transition-slide-top-small"><h3 class="uk-margin-remove responsive-title">Somos un equipo</h3></div>
+                <div class="uk-transition-slide-bottom-small"><h3 class="uk-margin-remove responsive-title">con una única esencia</h3></div>
+            </div>
+        </div>
+    </div>
+
+<div class="uk-section uk-section-large">
+    <div class="uk-container tm-container-medium">
+      <div class="uk-width-large uk-text-left@s uk-text-center">
+        <div class="service-container">
+          <h1 class="title uk-margin-remove">Acerca de Nosotros</h1>
+          <p class="content-description uk-margin-remove">
+            Apasionados con la creación de interfaces limpias que reflejen tu identidad como empresa y persona. La innovación es lo primordial, por lo cual bocetamos, diseñamos e implementamos tu marca.
+          </p>
+                         </div>
+      </div>
+    </div>
+</div>
+
+<div class="uk-section uk-section-large uk-position-relative background-primary-1-2">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('assets/components/team/a.jpg') }}" alt="">
+                  <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Contador Auditor</p>
+                    <h1 class="title uk-margin-small">Claudia Gómez Valderrama</h1>
+                    <p class="content-description uk-margin-remove">
+                      Apasionados con la creación de interfaces limpias que reflejen tu identidad como empresa y persona. La innovación es lo primordial, por lo cual bocetamos, diseñamos e implementamos tu marca.
+                    </p>
+
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-background-cover" uk-img data-src="{{ asset('assets/components/client-bg.svg') }}">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('assets/components/team/c.jpg') }}" alt="">
+                    <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div class="uk-flex-first@m">
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">Contador</p>
+                    <h1 class="title uk-margin-small">Hector Polanco Marín</h1>
+                    <p class="content-description uk-margin-remove">
+                      Apasionados con la creación de interfaces limpias que reflejen tu identidad como empresa y persona. La innovación es lo primordial, por lo cual bocetamos, diseñamos e implementamos tu marca.
+                    </p>
+                </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section uk-section-large uk-position-relative background-primary-1-2">
+
+  <div class="uk-container tm-container-medium">
+
+    <div class="uk-child-width-1-2@m uk-text-center uk-grid-large uk-flex uk-flex-middle" uk-grid>
+
+          <div>
+            <div class="uk-position-relative">
+              <a href="" class="hover-down">
+                <div class="uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+                  <img uk-img src="{{ asset('assets/components/team/b.jpg') }}" alt="">
+                    <div class="img-overlay"></div>
+                </div>
+                       </a>
+            </div>
+          </div>
+          <div>
+            <div class="uk-text-center uk-text-right@m">
+                <div class="uk-margin-auto uk-width-large uk-text-left@m">
+                  <div class="service-container">
+                    <p class="tag-section uk-margin-remove">ABOGADA</p>
+                    <h1 class="title uk-margin-small">Viviana Chávez Ferreira</h1>
+                    <p class="content-description uk-margin-remove">
+                      Apasionados con la creación de interfaces limpias que reflejen tu identidad como empresa y persona. La innovación es lo primordial, por lo cual bocetamos, diseñamos e implementamos tu marca.
+                    </p>
+
+                                   </div>
+                </div>
+            </div>
+          </div>
+
+       </div>
+
+  </div>
+
+</div>
+
+<div class="uk-section">
+  <div class="uk-container tm-container-medium">
+    <img class="uk-padding" src="{{ asset('assets/components/team/team-work.svg') }}" uk-img alt="">
+  </div>
+</div>
+
+
+<div class="uk-text-center">
+        <div class="uk-inline-clip uk-transition-toggle uk-light uk-width-1-1" tabindex="0">
+            <img class="uk-width-1-1" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="{{ asset('assets/components/team/team.jpg') }}" uk-img alt="">
+            <div class="uk-position-center">
+                <div class="uk-transition-slide-top-small"><h3 class="uk-margin-remove responsive-title">Somos CGV</h3></div>
+                <div class="uk-transition-slide-bottom-small"><h3 class="uk-margin-remove responsive-title">Únete a Nuestro Equipo</h3></div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'frontend/components/footer.html.twig' %}
+
+{% endblock %}

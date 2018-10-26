@@ -1,0 +1,129 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+{% include 'frontend/components/navigator.html.twig' %}
+
+<div class="uk-section">
+
+<div class="uk-container tm-container-medium">
+
+   <div class="uk-text-center">
+     <p class="tag-section uk-margin-remove">CONTÁCTANOS</p>
+     <h2 class="uk-margin-small">Trabajemos juntos</h2>
+     <p class="uk-margin-remove uk-width-large@s uk-width-1-1 uk-margin-auto" >Déjanos tu información en el siguiente formulario y nos comunicaremos contigo en la brevedad.</p>
+   </div>
+
+   <div class="uk-section">
+
+    <div class="uk-container uk-container-small">
+       <div class="uk-width-large uk-margin-auto">
+         <form id="send-contactmessage" class="uk-form-stacked">
+        <div class="uk-margin">
+         <label class="uk-form-label" for="form-stacked-text">Nombre</label>
+         <div class="uk-form-controls">
+             <input class="uk-input" id="name" type="text" placeholder="...">
+         </div>
+       </div>
+
+       <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Correo</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="mail" type="text" placeholder="...">
+        </div>
+       </div>
+
+       <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Teléfono</label>
+        <div class="uk-form-controls">
+            <input class="uk-input" id="phone" type="text" placeholder="...">
+        </div>
+       </div>
+
+       <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Mensaje</label>
+        <div class="uk-form-controls">
+            <textarea class="uk-textarea" id="message" type="text" rows=3 placeholder="..."></textarea>
+        </div>
+       </div>
+
+       <div class="uk-margin">
+         <div class="spinner-loader-mail uk-margin-small-right uk-hidden" uk-spinner></div> <a class="uk-button link-style-a" id="send-form">Enviar</a>
+       </div>
+
+        </form>
+      </div>
+    </div>
+
+   </div>
+
+</div>
+
+</div>
+
+<script>
+
+    $('#send-form').click(function(){
+
+        var name = $('#name').val();
+        var mail = $('#mail').val();
+        var phone = $('#phone').val();
+        var message = $('#message').val();
+
+        if(name !="" || mail!="" || message != ""){
+
+     $('.spinner-loader-mail').removeClass('uk-hidden');
+
+          $.ajax({
+       type: 'post',
+       url: '{{ path('request-sendmail') }}',
+       dataType: "json",
+      data: {
+         "name": name,
+         "mail": mail,
+         "phone": phone,
+         "message" : message
+       },
+       async: true,
+       success: function(data) {
+          UIkit.notification({
+            message: 'Recibimos tu mensaje, nos comunicaremos en la brevedad.',
+            status: 'primary',
+            pos: 'top-center',
+            timeout: 2000
+         });
+
+      $('.spinner-loader-mail').addClass('uk-hidden');
+
+    },
+    error: function(){
+
+      UIkit.notification({
+        message: 'Hubo un error al intentar enviar tu solicitud. Comunícate a contacto@asesoriascgv.cl',
+        status: 'danger',
+        pos: 'top-center',
+        timeout: 2000
+     });
+
+  $('.spinner-loader-mail').addClass('uk-hidden');
+
+    }
+
+
+     });
+   }else{
+     UIkit.notification({
+       message: 'Revisa el formulario e intenta nuevamente.',
+       status: 'danger',
+       pos: 'top-center',
+       timeout: 2000
+    });
+   }
+
+    });
+
+</script>
+
+{% endblock %}
