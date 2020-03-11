@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#497BEF">
         <title>{% block title %}{% endblock %} | Asesorías CGV</title>
         {% block stylesheets %}
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.12/css/uikit.min.css"/>
@@ -17,6 +19,26 @@
     <body>
         <div id="main-container">
           {% block body %}{% endblock %}
+
+          <div id="my-id" uk-offcanvas>
+            <div class="uk-offcanvas-bar uk-box-shadow-medium uk-background-default uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-center nav-modal uk-margin-auto-vertical">
+          <li class="uk-nav-header"><h3>CGV</h3></li>
+            <li class="uk-active"><a href="{{ path('home') }}">Portada</a></li>
+            <li class="uk-active"><a href="{{ path('services-admin') }}">Administración</a></li>
+            <li class="uk-active"><a href="{{ path('services-juridico') }}" >Jurídico</a></li>
+            <li class="uk-active"><a href="{{ path('pricing') }}">Planes</a></li>
+            <li class="uk-active"><a href="{{ path('blog') }}">Blog</a></li>
+            <li class="uk-nav-header"><h3>Identidad</h3></li>
+            <li><a href="{{ path('say') }}"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Say TeamWork</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="{{ path('contact') }}">><span class="uk-margin-small-right" uk-icon="icon: mail"></span> Contáctanos</a></li>
+        </ul>
+
+    </div>
+          </div>
+
         </div>
 
         <div class="loader"></div>
